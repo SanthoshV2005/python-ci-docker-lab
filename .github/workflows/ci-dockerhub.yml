@@ -27,7 +27,7 @@ jobs:
 
       - name: Run tests
   run: |
-    export PYTHONPATH=$PWD
+    export PYTHONPATH=${{ github.workspace }}
     pytest -q
 
       - name: Docker meta
